@@ -1,0 +1,9 @@
+# Keep the build context small and never send local secrets to the builder.
+.git
+.github
+bin
+.env
+.env.*
+*.md
+docker-compose.yml
+Makefile
