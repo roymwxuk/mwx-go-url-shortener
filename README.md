@@ -53,4 +53,3 @@ Every limit applies **per client IP** (IPv6 is grouped by /64) and **per instanc
 Malformed codes such as `/favicon.ico` or `/wp-login.php` return 404 without querying the database. `/healthz` has no limit, so load balancer health checks keep working.
 
 App-level limits protect the **database and EC2**. The request is **already billed** by API Gateway or the ALB before it reaches the app. To stop floods at the edge, see the "Abuse protection" section in `COST_ASSESSMENT.md`.
-# mwx-go-url-shortener
